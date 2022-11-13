@@ -4,6 +4,7 @@
 sudo msfconsle
 
 -Regresar al inicio de msf
+back
 
 -Usar módulo para escanear puertlos abiertos
 use auxiliary/scanner/portscan/tcp
