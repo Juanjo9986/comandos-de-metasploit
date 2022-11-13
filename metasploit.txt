@@ -1,21 +1,45 @@
 *metasploit
--Iniciar metasploit
+
+-Iniciar metasploit framework
 sudo msfconsle
+
+-Regresar al inicio de msf
+
 -Usar módulo para escanear puertlos abiertos
 use auxiliary/scanner/portscan/tcp
 use auxiliary/scanner/portscan/syn
+
+-Buscar información de una vulnerabilidad
+search (id de la vulnerabilidad)
+
 -Mostrar información del auxiliar, exploits, payloads, etc (es necesario estar dentro del elemento)
 show info
+
 -Mostrar opciones del auxiliar, exploits, payloads, etc (es necesario estar dentro del elemento)
 show options
 
+-Usar móludo para verificar la vulnerabilidad de un equipo a ms17-010
+use auxiliary/scanner/smb/smb_ms17_010 
+
+------------------------------------------------------------------------------------------------------------------
+
 *nmap
+
 -Lista de equipos conectados a la red:
 sudo nmap -sP (rango de IPs [192.168.1.*])
+
 -Lista de puertos abiertos de un equipo:
 sudo nmap (IP) -p (rango de puertos [0-1024, 0-1024, 1024-])
+
+-Lista de puertos abiertos y sistema operativo de un equipo:
+sudo nmap -O (IP)
+
 -Lista de vulneravilidades de un equipo:
 sudo nmap -Pn --script=vuln (IP)
 
+------------------------------------------------------------------------------------------------------------------
+
 *wireshark
+
+-Iniciar Wireshark
 sudo wireshark
