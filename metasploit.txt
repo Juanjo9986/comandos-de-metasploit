@@ -1,10 +1,21 @@
 *metasploit
 -Iniciar metasploit
-sudo mfsconsle
--
+sudo msfconsle
+-Usar módulo para escanear puertlos abiertos
+use auxiliary/scanner/portscan/tcp
+use auxiliary/scanner/portscan/syn
+-Mostrar información del auxiliar, exploits, payloads, etc (es necesario estar dentro del elemento)
+show info
+-Mostrar opciones del auxiliar, exploits, payloads, etc (es necesario estar dentro del elemento)
+show options
 
 *nmap
--Ver equipos conectados a la red:
-nmap -sP 192.168.1.*
--Ver vulneravilidades de un equipo:
-nmap -Pn --script=vuln (IP)
+-Lista de equipos conectados a la red:
+sudo nmap -sP (rango de IPs [192.168.1.*])
+-Lista de puertos abiertos de un equipo:
+sudo nmap (IP) -p (rango de puertos [0-1024, 0-1024, 1024-])
+-Lista de vulneravilidades de un equipo:
+sudo nmap -Pn --script=vuln (IP)
+
+*wireshark
+sudo wireshark
