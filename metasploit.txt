@@ -1,0 +1,10 @@
+*metasploit
+-Iniciar metasploit
+sudo mfsconsle
+-
+
+*nmap
+-Ver equipos conectados a la red:
+nmap -sP 192.168.1.*
+-Ver vulneravilidades de un equipo:
+nmap -Pn --script=vuln (IP)
