@@ -35,6 +35,9 @@ sudo nmap (IP) -p (rango de puertos [0-1024, 0-1024, 1024-])
 -Lista de puertos abiertos y sistema operativo de un equipo:
 sudo nmap -O (IP)
 
+-Lista de puertos abiertos y servicios ejecutándose
+sudo nmap (IP) -sV -v
+
 -Lista de vulneravilidades de un equipo:
 sudo nmap -Pn --script=vuln (IP)
 
